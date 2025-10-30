@@ -1,0 +1,36 @@
+[package]
+name = "tang"
+version = "0.1.0"
+edition = "2021"
+authors = ["Tang Rust Implementation"]
+description = "A Rust implementation of Tang - Network-Based Cryptographic Binding Server"
+license = "MIT"
+
+[dependencies]
+axum = "0.7"
+axum-server = { version = "0.7", features = ["tls-rustls"] }
+tokio = { version = "1", features = ["full"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["trace", "limit", "timeout", "cors"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+p256 = { version = "0.13", features = ["ecdh", "jwk"] }
+elliptic-curve = { version = "0.13", features = ["jwk"] }
+rand = "0.8"
+sha2 = "0.10"
+base64 = "0.22"
+clap = { version = "4", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1.0"
+thiserror = "1.0"
+walkdir = "2"
+subtle = "2.6"
+zeroize = { version = "1.8", features = ["derive"] }
+rustls = "0.23"
+rustls-pemfile = "2"
+governor = "0.7"
+
+[dev-dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+tempfile = "3"
