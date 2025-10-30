@@ -164,4 +164,4 @@ Contributions welcome! This is a defensive security tool designed to help protec
 - [Clevis](https://github.com/latchset/clevis) - Automated decryption framework (client for Tang)
 - [RFC 7516 (JWE)](https://tools.ietf.org/html/rfc7516)
 - [RFC 7517 (JWK)](https://tools.ietf.org/html/rfc7517)
->>>>>>> d0049a5 (Tang in rust init)
+
